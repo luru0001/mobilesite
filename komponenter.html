@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komponenter</title>
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/">
+          <img src="img/logo/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="min_computer.html">Min computer</a></li>
+          <li><a href="operativsystemer.html">Operativsystemer</a></li>
+          <li><a href="komponenter.html">Komponenter</a></li>
+          <li><a href="galleri.html">Galleri</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Komponenter</h1>
+        <section class="grid_1-1-1">
+          <div class="flex_col">
+            <img src="img/komponenter/processor.webp" alt="Processor" />
+            <h2>Vigtige komponenter</h2>
+            <article class="komponenter-tekst">
+              <p>
+                CPU'en er din computers 'Central Processing Unit', lidt ligesom
+                din hjerne. Bygger du en stationær computer, vil det første, du
+                vælger, oftest være CPU. Det er afgørende for bundkort og RAM,
+                hvilken CPU du har. I 2021 var det svært at skaffe en god CPU på
+                grund af corona-logistik og "bitcoin" mining.
+              </p>
+              <p>
+                GPU står for 'Graphic Processing Unit' eller grafikkort på
+                dansk. Til spil eller videoredigering er et selvstændigt
+                grafikkort med dedikeret RAM ofte nødvendigt.
+              </p>
+              <p>
+                RAM er hukommelse for computeren, hvor mange mellemregninger den
+                kan håndtere samtidig. RAM står for 'Random Access Memory'.
+              </p>
+            </article>
+            <img src="img/komponenter/grafikkort.webp" alt="Grafikkort" />
+          </div>
+
+          <div class="flex_col">
+            <img
+              src="img/komponenter/luft.webp"
+              alt="Kølesystem i en computer"
+            />
+            <article class="komponenter-tekst">
+              <h2>Køling</h2>
+              <h3>Luftkøling</h3>
+              <p>
+                Luftkøling er den mest almindelige metode, hvor ventilatorer
+                leder varm luft ud og køligere luft ind. Moderne luftkølere kan
+                være næsten lydløse.
+              </p>
+              <h3>Vandkøling</h3>
+              <p>
+                Vandkøling bruger vand i et lukket system til at holde
+                temperaturen nede. Det kræver pumper, rør og andet udstyr, men
+                kan være effektivt og futuristisk.
+              </p>
+            </article>
+          </div>
+
+          <div class="flex_col">
+            <img src="img/komponenter/motherboard1.webp" alt="Motherboard" />
+            <article class="komponenter-tekst">
+              <h2>Motherboard</h2>
+              <p>
+                Bundkortet er "pladen", hvor du sætter CPU, GPU og RAM. Det skal
+                passe til resten af din hardware, ellers kan det blive en
+                flaskehals.
+              </p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>Lavet af Lua</p>
+    </footer>
+  </body>
+</html>

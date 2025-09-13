@@ -1,0 +1,408 @@
+/* -------------------------------------------- Index - side 1 ------------------------------------------------------- */
+/* --------------------------------  LAYOUT -------------------------------- */
+section {
+  display: grid;
+  gap: 2rem;
+  align-items: stretch;
+  margin-bottom: 3rem;
+}
+section.grid_2-1 {
+  grid-template-columns: 2fr 1fr;
+}
+section.grid_1-1 {
+  grid-template-columns: 1.4fr 1.2fr;
+}
+/* -----------------  Mobil layout ---------------- */
+@media (max-width: 800px) {
+  section.grid_2-1,
+  section.grid_1-1 {
+    grid-template-columns: 1fr;
+  }
+
+  section.grid_1-1 .order {
+    order: initial;
+  }
+}
+
+/* --------------------------------  DESIGN -------------------------------- */
+/* ---------------- Sektion 1 ---------------- */
+section.grid_2-1 #text {
+  background: #fff2df;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.grid_2-1 .index-img {
+  background: #fff2df;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.grid_2-1 .index-img img {
+  max-width: 100%;
+  height: auto;
+}
+/* ------------------ Link-knap ----------------- */
+#link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 16px;
+  background-color: rgb(170, 0, 0);
+  color: #fff2df;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#link:hover {
+  background-color: rgb(124, 1, 1);
+}
+
+/* ---------------- Sektion 2 ---------------- */
+
+section.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  background: #fff2df;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section.grid_1-1 .order {
+  order: 1;
+}
+
+section.grid_1-1 .hjemmet {
+  order: 2;
+  text-align: left;
+}
+
+section.grid_1-1 .hjemmet p {
+  max-width: 600px;
+}
+
+section.grid_1-1 .order img {
+  width: 90%;
+  height: auto;
+  max-width: none;
+}
+dl dt {
+  font-family: "Roboto", sans-serif;
+  color: rgb(124, 1, 1);
+  text-align: center;
+  margin-bottom: 5px;
+}
+dl dd {
+  font-family: "Roboto", sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 5px;
+}
+/* -------------------------------------------- Min computer - side 2 ------------------------------------------------ */
+/* --------------------------------  LAYOUT -------------------------------- */
+/* ---- Genbruger layoutet fra index siden section.grid_1-1 ---- */
+section.grid_1-1 .min-com {
+  color: rgb(124, 1, 1);
+}
+
+/* -----------------  Mobil layout ---------------- */
+@media (max-width: 800px) {
+  section.grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  section.grid_1-1 .img-min-com {
+    order: 1;
+  }
+
+  section.grid_1-1 .min-com {
+    order: 2;
+  }
+}
+/* --------------------------------  DESIGN -------------------------------- */
+/* ----------------- Sektion 1 ---------------- */
+
+section.grid_1-1 .min-com {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+section.grid_1-1 .img-min-com {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.grid_1-1 .img-min-com img {
+  width: 90%;
+  height: auto;
+  max-width: none;
+}
+
+/* -------------------------------------------- Operativsystem - side 3 ---------------------------------------------- */
+/* --------------------------------  LAYOUT -------------------------------- */
+section.grid_5-3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+section.grid_5-3 .mac-windows {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section.grid_5-3 .mac-windows article div {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+/* -----------------  Mobil layout ---------------- */
+@media (max-width: 800px) {
+  section.grid_5-3 {
+    display: block;
+  }
+
+  .mac-windows,
+  .mac-windows article,
+  .tablets-mobiler {
+    display: block;
+  }
+
+  section.grid_5-3 img {
+    max-width: 80%;
+    margin: 1rem auto;
+    display: block;
+  }
+}
+/* --------------------------------  DESIGN -------------------------------- */
+main h1 {
+  text-align: center;
+  margin: 4rem 0 2rem 0;
+}
+section.grid_5-3 .mac-windows article {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+}
+
+section.grid_5-3 .mac-windows article h2 {
+  text-align: center;
+  margin: 0;
+}
+
+section.grid_5-3 img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+section.grid_5-3 .tablets-mobiler {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section.grid_5-3 .tablets-mobiler h2 {
+  text-align: center;
+  margin: 0;
+}
+/* -------------------------------------------- Komponenter - side 4 ------------------------------------------------- */
+/* --------------------------------  LAYOUT -------------------------------- */
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.container > h1 {
+  margin-bottom: 1rem;
+}
+/* -----------------  Mobil layout ---------------- */
+@media (max-width: 800px) {
+  .grid_1-1-1 {
+    grid-template-columns: 1fr;
+  }
+}
+/* -------------------------------------------- Galleri - side 5 ----------------------------------------------------- */
+section.grid_1-3 .galleri-artikel {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+  gap: 0 2rem;
+  align-items: stretch;
+  margin-top: 2.5rem;
+}
+
+.galleri-boks-h1,
+.galleri-boks-tekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem 1.5rem;
+}
+
+.galleri-boks-h1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  align-items: flex-start;
+}
+
+.galleri-boks-tekst {
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+  align-items: flex-start;
+}
+
+.galleri-boks-h1 h1 {
+  margin: 0;
+  text-align: left;
+}
+/* --------- Billedernes layout --------- */
+
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.img-mac {
+  grid-row: span 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-pink,
+.img-chip,
+.img-code,
+.img-hallo {
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-tastatur {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-hallo {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  width: 100%;
+  justify-self: start;
+  object-fit: cover;
+}
+
+.img-code {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+  width: 100%;
+  object-fit: cover;
+}
+.grid_1-1-1-1 img {
+  border: 4px solid #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* -----------------  Mobil layout ---------------- */
+@media (max-width: 800px) {
+  section.grid_1-3 .galleri-artikel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .galleri-boks-h1,
+  .galleri-boks-tekst,
+  .galleri-tekst p {
+    width: 100%;
+  }
+
+  .grid_1-1-1-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .img-mac,
+  .img-tastatur,
+  .img-hallo {
+    width: 100%;
+  }
+
+  .pink-chip {
+    display: flex;
+    gap: 2%;
+  }
+  .pink-chip .img-pink,
+  .pink-chip .img-chip {
+    width: 50%;
+  }
+
+  .img-code {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .img-hallo img {
+    width: 70%;
+  }
+}
+
+@media (min-width: 601px) {
+  .pink-chip {
+    display: contents;
+  }
+}
